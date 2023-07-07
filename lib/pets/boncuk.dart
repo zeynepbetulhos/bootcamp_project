@@ -106,7 +106,7 @@ class BoncukPage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Enerjik, Sevgi Dolu, Zeki, Uyumlu',
+                  'Enerjik, Sevgi Dolu, Zeki, Uyumlu ,Sevimli',
                   style: TextStyle(fontSize: 16.0),
                 ),
               ],
