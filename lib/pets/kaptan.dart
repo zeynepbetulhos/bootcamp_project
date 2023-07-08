@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bootcamp_project/profile_page.dart';
+
 
 class KaptanPage extends StatelessWidget {
   const KaptanPage({Key? key}) : super(key: key);
@@ -27,15 +27,6 @@ class KaptanPage extends StatelessWidget {
             );
           },
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.settings,
-              color: Colors.black,
-            ),
-          )
-        ],
       ),
       body: Column(
         children: [

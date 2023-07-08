@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bootcamp_project/profile_page.dart';
 
 class MaxPage extends StatelessWidget {
   const MaxPage({Key? key}) : super(key: key);
@@ -27,15 +26,6 @@ class MaxPage extends StatelessWidget {
             );
           },
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.settings,
-              color: Colors.black,
-            ),
-          )
-        ],
       ),
       body: Column(
         children: [

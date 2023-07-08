@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bootcamp_project/profile_page.dart';
 
 
 class BoncukPage extends StatelessWidget {
@@ -29,15 +28,6 @@ class BoncukPage extends StatelessWidget {
             );
           },
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.settings,
-              color: Colors.black,
-            ),
-          )
-        ],
       ),
       body: Column(
         children: [

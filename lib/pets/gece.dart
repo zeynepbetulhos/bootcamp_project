@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bootcamp_project/profile_page.dart';
+
 
 class GecePage extends StatelessWidget {
   const GecePage({Key? key}) : super(key: key);
@@ -8,8 +8,8 @@ class GecePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFE7F6FF),
-        title: const Text('Boncuk',
+        backgroundColor: const Color(0xFFFFE3D3),
+        title: const Text('Gece',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25.0,
@@ -27,20 +27,12 @@ class GecePage extends StatelessWidget {
             );
           },
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.settings,
-              color: Colors.black,
-            ),
-          )
-        ],
       ),
       body: Column(
         children: [
           Image.network(
-            'https://cdn.pixabay.com/photo/2016/03/28/10/05/kitten-1285341_1280.jpg',
+            'https://cdn.pixabay.com/photo/2013/06/30/17/49/domestic-cat-142453_640.jpg',
+            height: 250.0,
             fit: BoxFit.fitWidth,
           ),
           const SizedBox(height: 15.0),
@@ -48,12 +40,12 @@ class GecePage extends StatelessWidget {
             height: 7 * 25.0,
             padding: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(
-              color: const Color(0xFFE7F6FF),
+              color: const Color(0xFFFFE3D3),
               border: Border.all(color: Colors.white),
               borderRadius: BorderRadius.circular(8.0),
             ),
             child: const Text(
-              'Kedim Boncuk. Onu daha bebekken evlat edindim ve şu anda 2 yaşında. Yünlerle oynamayı ve uyumayı çok sever. Kendisi biraz utangaç bir kedi bu yüzden birbirimize alışmamız uzun sürdü ama şu an en iyi arkadaşlarımdan biri.',
+              'En yeni evcil hayvanım Gece. Barınaktan sahipleneli daha 1 ay oldu ama şimdiden evin sahibi gibi davranıyor. Uyumak ve yemek en sevdiği hobiler. Tüyleri simsiyah olmasa da gece beni uyutmamasından dolayı adını gece koydum',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w500,
@@ -63,7 +55,7 @@ class GecePage extends StatelessWidget {
           const SizedBox(height: 2.0),
           Container(
             decoration: BoxDecoration(
-              color: const Color(0xFFE7F6FF),
+              color: const Color(0xFFFFE3D3),
               borderRadius: BorderRadius.circular(8.0),
             ),
             width: 400.0,
@@ -79,7 +71,7 @@ class GecePage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Russian White',
+                  'Tekir',
                   style: TextStyle(fontSize: 16.0),
                 ),
               ],
@@ -88,7 +80,7 @@ class GecePage extends StatelessWidget {
           const SizedBox(height: 2.0),
           Container(
             decoration: BoxDecoration(
-              color: const Color(0xFFE7F6FF),
+              color: const Color(0xFFFFE3D3),
               borderRadius: BorderRadius.circular(8.0),
             ),
             width: 400.0,
@@ -104,7 +96,7 @@ class GecePage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Enerjik, Sevgi Dolu, Zeki, Uyumlu',
+                  'Uyumlu, Uykucu, Hırslı, Meraklı',
                   style: TextStyle(fontSize: 16.0),
                 ),
               ],
@@ -113,7 +105,7 @@ class GecePage extends StatelessWidget {
           const SizedBox(height: 2.0),
           Container(
             decoration: BoxDecoration(
-              color: const Color(0xFFE7F6FF),
+              color: const Color(0xFFFFE3D3),
               borderRadius: BorderRadius.circular(8.0),
             ),
             width: 400.0,
@@ -129,7 +121,7 @@ class GecePage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Kaliteli bir diyet ile beslenmelidir. Yeterince hareket ettirilerek obezite olmasının önüne geçilmeli. İnteraktif oyuncaklarla oynamak onu keyiflendirecektir.',
+                  'Tüylerinin daha güzel görünmesi içn kaiteli mamalar verebilirsiniz. Besinleri protein ağırlıklı olmalıdır. Komut almayı sevmezler.',
                   style: TextStyle(fontSize: 16.0),
                 ),
               ],
