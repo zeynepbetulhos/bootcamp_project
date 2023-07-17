@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           systemOverlayStyle: SystemUiOverlayStyle.dark,
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
         
       ),
-      home: SplashPage(),
+      home: const SplashPage(),
     );
   }
 }

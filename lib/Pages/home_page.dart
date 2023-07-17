@@ -1,3 +1,4 @@
+import 'package:bootcamp_project/Pages/vet_page.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../widgets/bottomNav_bar.dart';
@@ -14,14 +15,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:  BottomNavBarWidget(),
+      bottomNavigationBar:  const BottomNavBarWidget(),
       appBar: _buildAppBar(context),
-      body: SingleChildScrollView( 
+      body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(
             left: kDefaultPadding,
             top: kDefaultPadding,
-            bottom: kDefaultPadding        
+            bottom: kDefaultPadding
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,10 +38,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: kDefaultPadding,),
               Padding(
                 padding:  EdgeInsets.only(right: kDefaultPadding),
-                child: Row( 
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,          
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(                    
+                    Column(
                       children: [
                         CustomContainer(
                           onPressed: () {},
@@ -61,20 +62,26 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    Column(                    
+                    Column(
                       children: [
-                        CustomContainer(
-                          onPressed: () {},
-                          title: 'Veteriner', 
-                          containerHeight: 258,
-                          containerWidth: defaultContainerWidth,
-                           imagePath: AppImage().veterinerImage,
-                           containerColor: AccentPinkColor,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const VetPage()),
+                            );
+                          },
+                          child: CustomContainer(
+                            title: 'Veteriner',
+                            containerHeight: 258,
+                            containerWidth: defaultContainerWidth,
+                             imagePath: AppImage().veterinerImage,
+                             containerColor: AccentPinkColor,
+
+                          ),
                         ),
                         SizedBox(height: kDefaultPadding),
                          CustomContainer(
                           onPressed: () {},
-                          title: 'Sahiplendir', 
+                          title: 'Sahiplendir',
                           containerHeight: 174,
                           containerWidth: defaultContainerWidth,
                            imagePath: AppImage().Image,

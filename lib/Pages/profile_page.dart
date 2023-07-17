@@ -118,9 +118,9 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               width: 350.0,
               padding: const EdgeInsets.all(10.0),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Email',
                     style: TextStyle(
@@ -143,9 +143,9 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               width: 350.0,
               padding: const EdgeInsets.all(10.0),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Telefon Numarası',
                     style: TextStyle(
@@ -168,9 +168,9 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               width: 350.0,
               padding: const EdgeInsets.all(10.0),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Şehir',
                     style: TextStyle(
