@@ -1,5 +1,6 @@
+import 'package:bootcamp_project/LoginPage/LoginView.dart';
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import '../constains/constants.dart';
 import 'home_page.dart';
 
 
@@ -49,7 +50,7 @@ class _SplashPageState extends State<SplashPage> {
         ),
         child: FloatingActionButton( 
           onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage(),));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage(),));
           },
           backgroundColor: AccentOrangeColor,
            child: Icon(Icons.double_arrow_rounded, color: Colors.black54),

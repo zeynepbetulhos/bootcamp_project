@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'Pages/splash.dart';
-import 'constants.dart';
+import 'constains/constants.dart';
 
 void main() {
   runApp(const MyApp());

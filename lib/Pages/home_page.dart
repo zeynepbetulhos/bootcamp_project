@@ -1,6 +1,9 @@
+import 'package:bootcamp_project/LoginPage/LoginView.dart';
+import 'package:bootcamp_project/Pages/AdoptionPage.dart';
+import 'package:bootcamp_project/Pages/WalkerPage.dart';
 import 'package:bootcamp_project/Pages/vet_page.dart';
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import '../constains/constants.dart';
 import '../widgets/bottomNav_bar.dart';
 import '../widgets/customContainer_widget.dart';
 
@@ -52,13 +55,19 @@ class _HomePageState extends State<HomePage> {
                           containerColor: AccentBlueColor,
                         ),
                         SizedBox(height: kDefaultPadding),
-                        CustomContainer(
-                          onPressed: () {},
-                          title: 'Mesaj',
-                          containerHeight: 258,
-                          containerWidth: defaultContainerWidth,
-                          imagePath: AppImage().mesajImage,
-                          containerColor: AccentYellowColor,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const WalkerPage()),
+                            );
+                          },
+                          child: CustomContainer(
+                            onPressed: () {},
+                            title: 'GEZDİRME',
+                            containerHeight: 258,
+                            containerWidth: defaultContainerWidth,
+                            imagePath: AppImage().mesajImage,
+                            containerColor: AccentYellowColor,
+                          ),
                         ),
                       ],
                     ),
@@ -79,14 +88,19 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         SizedBox(height: kDefaultPadding),
-                         CustomContainer(
-                          onPressed: () {},
-                          title: 'Sahiplendir',
-                          containerHeight: 174,
-                          containerWidth: defaultContainerWidth,
-                           imagePath: AppImage().Image,
-                           containerColor: AccentPurpleColor,
+                         GestureDetector(
+                           onTap: () {
+                             Navigator.push(context, MaterialPageRoute(builder: (context) => const AdoptionPage()),
+                             );
+                           },
+                           child: CustomContainer(
+                            title: 'Sahiplendir',
+                            containerHeight: 174,
+                            containerWidth: defaultContainerWidth,
+                             imagePath: AppImage().Image,
+                             containerColor: AccentPurpleColor,
                         ),
+                         ),
                       ],
                     ),
                   ],
@@ -126,8 +140,10 @@ class _HomePageState extends State<HomePage> {
     actions: [
       IconButton(
         padding: EdgeInsets.only(top: kDefaultPadding, right: kDefaultPadding),
-        onPressed: () {}, 
-        icon: Icon(Icons.menu, color: Colors.black, size: 32,)
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+        },
+        icon: Icon(Icons.exit_to_app, color: Colors.black, size: 32,)
       )
     ],
   );

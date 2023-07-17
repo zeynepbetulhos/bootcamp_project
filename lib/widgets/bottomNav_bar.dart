@@ -4,7 +4,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 
 import '../Pages/home_page.dart';
 import '../Pages/profile_page.dart';
-import '../constants.dart';
+import '../constains/constants.dart';
 
 class BottomNavBarWidget extends StatelessWidget {
   const BottomNavBarWidget({
