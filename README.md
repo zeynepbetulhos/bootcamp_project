@@ -1,6 +1,6 @@
 # bootcamp_project
 
-A new Flutter project.
+This is a project we have done for Google App and Game Academy as team f_43
 
 ## Getting Started
 
